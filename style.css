@@ -1,0 +1,82 @@
+
+/* Elegant Black & Gold Theme */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #000000, #1c1c1c);
+    text-align: center;
+    color: gold;
+    overflow: hidden;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 3px 3px 15px gold;
+}
+
+.message {
+    font-size: 1.5em;
+    margin: 20px auto;
+    background: rgba(255, 215, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    width: 70%;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Glowing Picture Frame */
+.image-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid gold;
+    box-shadow: 0 0 30px gold;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: gold;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.7);
+}
+
+audio {
+    margin-top: 10px;
+    background: white;
+    border-radius: 5px;
+}
+
+/* Floating Hearts & Confetti */
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 1.8em;
+    animation: floatUp 5s infinite;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: gold;
+    opacity: 0.7;
+    animation: fallDown 5s infinite;
+}
+
+/* Animations */
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+@keyframes fallDown {
+    0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
