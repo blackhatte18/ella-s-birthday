@@ -1,14 +1,15 @@
+// Create Floating Hearts
 function createFloatingHearts() {
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 30; i++) {
         let heart = document.createElement("div");
         heart.classList.add("heart");
-        heart.innerHTML = "❤️";
         heart.style.left = Math.random() * window.innerWidth + "px";
         heart.style.animationDuration = Math.random() * 3 + 3 + "s";
-        document.querySelector(".hearts").appendChild(heart);
+        document.body.appendChild(heart);
     }
 }
 
+// Confetti Effect
 function createConfetti() {
     for (let i = 0; i < 30; i++) {
         let confetti = document.createElement("div");
@@ -21,3 +22,4 @@ function createConfetti() {
 
 createFloatingHearts();
 createConfetti();
+
