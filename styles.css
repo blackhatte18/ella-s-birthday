@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     max-width: 100%;
-    overflow-x: hidden; /* Prevents side-scrolling */
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -29,7 +29,7 @@ header {
 }
 
 .ella-container img {
-    width: 40%;  /* Keeps layout same as before */
+    width: 40%;
     max-width: 200px;
     height: auto;
     border-radius: 50%;
