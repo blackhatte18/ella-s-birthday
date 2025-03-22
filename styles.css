@@ -97,23 +97,3 @@ button:hover {
     background: white;
     color: black;
 }
-
-/* 🔥 Make It Responsive */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
-    header, main {
-        width: 90%;
-    }
-
-    .ella-container img {
-        width: 60%;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 10px;
-    }
-}
