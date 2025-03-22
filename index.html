@@ -3,34 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Ella! 🎂</title>
+    <title>🎂 Happy Birthday Ella! 💖</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>🎉 Happy 17th Birthday, Ella! 🎂</h1>
-        <p class="message">
-            Ella, you are a truly special person who fills every moment with joy and kindness. 
-            Your laughter is like music, your smile brighter than the stars, and your heart is the purest gold. 
-            I am so lucky to have you in my life. 
-            Today, we celebrate **YOU**—your beauty, your dreams, and the amazing future ahead!  
-            May all your wishes come true. ✨
-        </p>
-        
-        <!-- Ella’s Picture -->
-        <div class="image-container">
-            <img src="https://i.imgur.com/a9MWlSW.jpeg" alt="Ella's Picture">
-        </div>
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
 
-        <!-- Play Her Favorite Song -->
-        <h2>🎶 Play Your Favorite Song 🎶</h2>
-        <audio controls>
-            <source src="https://www.dropbox.com/scl/fi/tmzzw0gzkxvch2w7squs1/Blackbear-Idfc-Tarro-Remix.mp3?rlkey=ed1m9yj4nqkxyx5u8aqgdaxun&raw=1" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
+    <!-- Fireworks & Confetti -->
+    <canvas id="fireworks"></canvas>
+
+    <header>
+        <h1>🎉 Happy 17th Birthday, Ella! 💖</h1>
+    </header>
+
+    <!-- Ella's Picture -->
+    <div class="ella-picture">
+        <img src="https://i.imgur.com/a9MWlSW.jpeg" alt="Ella's Beautiful Picture">
     </div>
 
+    <main>
+        <h2>You are amazing, Ella! ❤️</h2>
+        <p>Wishing you a day filled with love, joy, and all the happiness you bring to others! 🎂🎁🎊</p>
+
+        <!-- Surprise Button -->
+        <button id="surpriseBtn">🎁 Click for a Surprise</button>
+
+        <!-- Surprise Message -->
+        <div id="surpriseMessage" class="hidden">
+            <h2>💖 Happy Birthday, Ella! 🎂</h2>
+            <p>You are the most wonderful person, and I am so grateful to have you in my life. May this year bring you endless love and success! 💕</p>
+            <button onclick="hideMessage()">Close</button>
+        </div>
+
+        <!-- Music Player -->
+        <div class="music-container">
+            <button id="playMusic">🎶 Play Birthday Song</button>
+        </div>
+
+    </main>
+
+    <!-- Background Music -->
+    <audio id="birthdaySong" loop>
+        <source src="<audio id="birthdaySong" loop>
+    <source src="https://www.dropbox.com/scl/fi/tmzzw0gzkxvch2w7squs1/Blackbear-Idfc-Tarro-Remix.mp3?rlkey=ed1m9yj4nqkxyx5u8aqgdaxun&raw=1" type="audio/mp3">
+</audio>
+" type="audio/mp3">
+    </audio>
+
     <script src="script.js"></script>
+
 </body>
 </html>
