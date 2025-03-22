@@ -1,21 +1,21 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-    background: linear-gradient(45deg, #ff1493, #ff69b4, #ffb6c1);
-    color: white;
+    background: black;
+    color: gold;
     margin: 0;
     padding: 0;
     max-width: 100%;
-    overflow-x: hidden; /* Fixes horizontal scrolling issue */
+    overflow-x: hidden; /* Prevents side-scrolling */
 }
 
 /* Header */
 header {
-    background-color: rgba(255, 20, 147, 0.9);
+    background-color: rgba(255, 215, 0, 0.2);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px white;
+    box-shadow: 0px 0px 20px gold;
     width: 80%;
     max-width: 600px;
     margin: auto;
@@ -29,12 +29,12 @@ header {
 }
 
 .ella-container img {
-    width: 40%;  /* Keep the same layout but auto-resize */
+    width: 40%;  /* Keeps layout same as before */
     max-width: 200px;
     height: auto;
     border-radius: 50%;
-    border: 5px solid white;
-    box-shadow: 0px 0px 10px pink;
+    border: 5px solid gold;
+    box-shadow: 0px 0px 15px gold;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -45,7 +45,7 @@ header {
 /* 🌟 Text Below Ella's Picture */
 .ella-message {
     font-size: 18px;
-    color: yellow;
+    color: white;
     margin-top: 10px;
 }
 
@@ -63,11 +63,11 @@ main {
 }
 
 #surpriseMessage {
-    background: white;
+    background: gold;
     color: black;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px pink;
+    box-shadow: 0px 0px 15px white;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -81,18 +81,21 @@ main {
 }
 
 button {
-    background: pink;
+    background: gold;
     border: none;
     padding: 12px 18px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-    max-width: 90%;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px gold;
 }
 
 button:hover {
-    background: hotpink;
+    background: white;
+    color: black;
 }
 
 /* 🔥 Make It Responsive */
