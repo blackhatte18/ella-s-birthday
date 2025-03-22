@@ -1,4 +1,4 @@
-/* General Styles - Fix Layout */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -6,9 +6,8 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    width: 100%;
-    max-width: 100vw;  /* Fix extra width issue */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    max-width: 100%;
+    overflow-x: hidden; /* Fixes horizontal scrolling issue */
 }
 
 /* Header */
@@ -17,11 +16,12 @@ header {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px white;
-    max-width: 90%;
+    width: 80%;
+    max-width: 600px;
     margin: auto;
 }
 
-/* 🎂 Ella's Picture (Now Scales Properly) */
+/* 🌟 Ella's Picture */
 .ella-container {
     text-align: center;
     margin-top: 20px;
@@ -29,8 +29,8 @@ header {
 }
 
 .ella-container img {
-    width: 50%;  /* Auto-resizing */
-    max-width: 200px;  /* Prevents it from getting too big */
+    width: 40%;  /* Keep the same layout but auto-resize */
+    max-width: 200px;
     height: auto;
     border-radius: 50%;
     border: 5px solid white;
@@ -42,11 +42,19 @@ header {
     transform: scale(1.1);
 }
 
-/* 💖 Message Below Picture */
+/* 🌟 Text Below Ella's Picture */
 .ella-message {
     font-size: 18px;
     color: yellow;
     margin-top: 10px;
+}
+
+/* Main Content */
+main {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
 }
 
 /* Surprise Message */
@@ -64,10 +72,10 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 80%;
+    max-width: 90%;
 }
 
-/* 🎶 Music Button */
+/* Buttons */
 .music-container {
     margin-top: 20px;
 }
@@ -75,31 +83,30 @@ header {
 button {
     background: pink;
     border: none;
-    padding: 10px 15px;
+    padding: 12px 18px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 button:hover {
     background: hotpink;
 }
 
-/* 🔥 Responsive Fix for Smaller Screens */
+/* 🔥 Make It Responsive */
 @media (max-width: 768px) {
     body {
         font-size: 16px;
     }
 
-    .ella-container img {
-        width: 70%;  /* Adjust image size on mobile */
+    header, main {
+        width: 90%;
     }
 
-    header {
-        font-size: 18px;
-        padding: 15px;
+    .ella-container img {
+        width: 60%;
     }
 
     button {
